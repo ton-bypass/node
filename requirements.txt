@@ -10,7 +10,7 @@ plumbum==1.8.1
 pycparser==2.21
 pydantic==2.6.1
 pydantic_core==2.16.2
-pyOpenSSL==23.0.0
+pyOpenSSL>=23.0.0
 python-decouple==3.7
 python-dotenv==0.21.1
 rpyc==6.0.0
