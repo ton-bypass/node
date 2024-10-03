@@ -16,6 +16,6 @@ RUN apt-get update && \
     apt-get remove -y curl unzip && \
     apt-get autoremove -y && \
     apt-get clean all && \
-    rm -rf /var/lib/apt/lists/*
+    rm -rf /var/lib/apt/lists/* /var/cache/apt
 
 CMD ["bash", "-c", "python -O main.py"]
