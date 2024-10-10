@@ -35,7 +35,7 @@ class Colors:
     # cancel SGR codes if we don't write to a terminal
     if not __import__("sys").stdout.isatty():
         for _ in dir():
-            if isinstance(_, str) and _[0] != "_":
+            if _[0] != "_":
                 locals()[_] = ""
     else:
         # set Windows console in VT mode
